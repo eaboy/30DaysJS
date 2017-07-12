@@ -28,7 +28,6 @@ function isADrumKey (keyCode) {
 
 function playSound(key) {
     var audios = document.querySelectorAll('audio');
-    console.log(this);
     for (var i = 0 ; i < audios.length ; i++ ) {
         if (key === parseInt(audios[i].getAttribute('data-key'))) {
             audios[i].pause();
